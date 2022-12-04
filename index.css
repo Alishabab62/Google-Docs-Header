@@ -9,6 +9,11 @@ header{
     display: flex;
     position: relative;
 }
+header .bar{
+    margin-top: 20px;
+    font-size: 25px;
+    display: none;
+}
 .logo img{
     position: absolute;
     top: 13px;
@@ -177,4 +182,133 @@ button i{
 
 #insert-bar ul li:hover{
     background-color: rgb(233, 233, 233);
+}
+
+#format-bar{
+    width: 250px;
+    position: absolute;
+    left: 250px;
+    box-shadow: 1px 1px 1px rgb(233, 233, 233), -1px -1px 1px rgb(233, 233, 233);
+    display: none;
+}
+#format-bar ul{
+    border-bottom: 0.5px solid gray;
+    list-style-type: none;
+}
+
+#format-bar ul li:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+#tools-bar{
+    width: 250px;
+    position: absolute;
+    left: 320px;
+    box-shadow: 1px 1px 1px rgb(233, 233, 233), -1px -1px 1px rgb(233, 233, 233);
+    display: none;
+}
+#tools-bar ul{
+    border-bottom: 0.5px solid gray;
+    list-style-type: none;
+}
+
+#tools-bar ul li:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    
+ }
+   
+ 
+ @media only screen and (max-width: 1200px) {
+    
+ }
+ 
+ @media only screen and (max-width: 912px) {
+    .message-icon{
+        display: none;
+    }
+    .zoom-icon{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+}
+ 
+ @media only screen and (max-width: 820px) {
+    .message-icon{
+        display: none;
+    }
+    .zoom-icon{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+ }
+ 
+ 
+ @media only screen and (max-width: 651px) {
+    .message-icon{
+        display: none;
+    }
+    .zoom-icon{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    .last-edit{
+        display: none;
+    }
+ }
+ 
+ 
+ @media only screen and (max-width: 480px) {
+    
+ }
+ 
+ @media only screen and (max-width: 450px) {
+    .logo{
+        display: none;
+    }
+   header .bar{
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        top: 80px;
+        left: 10px;
+}
+  .header-container  .menu{
+        display: none;
+    }
+    .doc-name{
+        display: none;
+    }
+    .message-icon{
+        display: none;
+    }
+    .zoom-icon{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+ }
+ 
+ @media only screen and (max-width: 390px) {
+
+ }
+ 
+ @media only screen and (max-width: 360px) {
+    .menu{
+        flex-direction: column;
+    }
 }

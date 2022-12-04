@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        <div class="bar"><i class="fa fa-bars" id="nav-bar"></i></div>
         <div class="logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEUmhPz///8AZtoSfvyjxP0YgPyEs/0Ae/wAefzd6v75/P/j7v/0+f/L3v4mhf0AZNju9Pxmov3S4f7A1/6Ltv2uy/7T4/6Uu/11qv220P670/7I3P58rfsAYdeewf1Wmvzvbmb5AAADBUlEQVR4nO3d227aQBCAYcziYAyUcjBxkqZ5/7csFSi9aKTMrmeZGfT/1wjvp1llzUmZNY/ezHoB1UMYP4TxQxg/hP91Hp6fKvTrZw3d3/KEqzEtU1ujNK9FzBFu9l07q9X7rhIxQ3hI9Xyz2e690hTlwmNX0XcRzisRxcJDXeBFWIkoFfY1d+hNWIcoFY7pDsIqRKFwXXmP3oQ1iELhqfYIb8IKRKGwtu9TqE+UCetv0k/hXPvolwmP1TfpP6H2FGXC4Z5CZaJMuLirUJfoUqhK9CnUJDoVKhK9CvWIboVqRL9CraPfsVBpip6FOlN0LVSZom+hBtG5UIHoXTid6F44mehfOJUYQDjx0IggnDbFEMJJU4whnDLFIMIJxCjCcmIYYTExjrCUGEhYSIwkLCOGEhYRYwlLjv5gwoIpRhPmE8MJs4nxhLnEgMJMYkRhHjGkMIsYU5hDDCrMOPqjCuVTdCPMBM7nOyHRjfBHdul3LGF+aYEQIULrECJEaB9ChAjtQ4gQoX0IESK0DyFChPYh1BWmTr9vr3lPYdo2vXbN9ruL3lO4PIieJq/DEqHoaRBeQ4iwKIQIbyG8hjC9rPR78XTXNktL/VzdeZuEECFC+xAiRGgfQoQI7UOoK3z4V0/pda3fq6dXwI//LgbCohAivIXwGkKERSG8713bW7/Rrn/zdNf2+N8YMgkhQoT2IUSI0D6ECBHah1BX2E75gCKCsF0ctsWdPwIIp72LsS/7D6AIESJEiBAhQoQIM4UmIUSI0D6ECBHahxAhQvsQIkRoH0KECO1DiBChfQgRIrQPIUKE9iFEiNA+hAgR2ocQIUL7VIWDS+GgKDy6FB4VhevOmvNF3VpR2Fhrvky4dNnDTv62aTqpCh1uU+EmlQqb0dsQ0yhcuVTYl33bvF5tryxszr72aXeWLlwsbI6eiJ3sLMwTNtvkZae2KeP3HRnCZrPvPBjbbr/JWHWOsGlWY1qm1rLL9cdV1przhJfOw/OTXc+D+C9MsTBcCOOHMH4I44cwfn8A3eysPaJ7bhwAAAAASUVORK5CYII=" alt="logo"></div>
         <div class="header-container">
             <div class="doc-name">
@@ -20,7 +21,7 @@
                 <i class="fa fa-file-o" aria-hidden="true"></i>
                 <i class="fa fa-cloud-upload" aria-hidden="true"></i>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu-bar">
                 <div class="file btn" id="file-btn">File</div>
                 <div class="edit btn" id="edit-btn">Edit</div>
                 <div class="view btn" id="view-btn">View</div>
@@ -133,6 +134,49 @@
     <ul>
         <li><i class="fa fa-bookmark-o"></i>Bookmark</li>
         <li><i class="fa fa-table"></i>Tables of contents</li>
+    </ul>
+</div>
+<div id="format-bar">
+    <ul>
+        <li><i class="fa fa-file-text-o" aria-hidden="true"></i>Text</li>
+        <li><i class="fa fa-bars"></i>Paragraph styles</li>
+        <li><i class="fa fa-bars"></i>Align & indent</li>
+        <li><i class="fa fa-bars"></i>Line & paragraph spacing</li>
+        <li><i class="fa fa-bars"></i>Columns</li>
+        <li><i class="fa fa-bars"></i>Bullets & numbering</li>
+    </ul>
+    <ul>
+        <li><i class="fa fa-header"></i>Headers & footers</li>
+        <li><i class="fa fa-hashtag"></i>Page Number</li>
+        <li><i class="fa-regular fa-file-lines"></i>Page Orientation</li>
+    </ul>
+    <ul>
+        <li><i class="fa fa-table"></i>Table</li>
+        <li><i class="far fa-image" aria-hidden="true"></i>Image</li>
+        <li><i class="fa fa-bars"></i>Borders & lines</li>
+    </ul>
+    <ul>
+        <li><i class="fas fa-remove-format"></i>Clear formatting</li>
+    </ul>
+</div>
+<div id="tools-bar">
+    <ul>
+        <li><i class="fa-solid fa-spell-check"></i>Spelling and grammar</li>
+        <li><i class="fa-solid fa-spell-check"></i>Word Count</li>
+        <li><i class="fa-solid fa-spell-check"></i>Review suggested edits</li>
+        <li><i class="fa-solid fa-arrow-right-arrow-left"></i>Comapre documents</li>
+        <li><i class="fa-solid fa-quote-right"></i>Citaions</li>
+        <li><i class="fa-solid fa-link"></i>Linked objects</li>
+        <li><i class="fa-solid fa-spell-check"></i>Dictionary</li>
+    </ul>
+    <ul>
+        <li><i class="fa-sharp fa-solid fa-language"></i>Translated document</li>
+        <li><i class="fa-solid fa-microphone"></i>Voice typing</li>
+    </ul>
+    <ul>
+        <li><i class="fa-regular fa-bell"></i>Notification settings</li>
+        <li><i class="fa-solid fa-user"></i>Preferences</li>
+        <li><i class="fa-solid fa-universal-access"></i>Accessibilty</li>
     </ul>
 </div>
     <script src="./index.js"></script>
