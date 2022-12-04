@@ -12,7 +12,14 @@ filebtn.addEventListener('click' ,()=>{
 });
 filebtn.addEventListener('mouseout',()=>{
     fileBar.style.display="none";
+});
+fileBar.addEventListener('mousemove',()=>{
+    fileBar.style.display="block";
 })
+
+fileBar.addEventListener('mouseout',()=>{
+    fileBar.style.display="none";
+});
 
 const editBtn=document.getElementById('edit-btn');
 const editBar=document.getElementById('edit-bar');
@@ -22,6 +29,14 @@ editBtn.addEventListener('click' ,()=>{
 });
 
 editBtn.addEventListener('mouseout',()=>{
+    editBar.style.display="none";
+});
+
+editBar.addEventListener('mousemove',()=>{
+    editBar.style.display="block";
+})
+
+editBar.addEventListener('mouseout',()=>{
     editBar.style.display="none";
 });
 
@@ -36,6 +51,14 @@ viewBtn.addEventListener('mouseout',()=>{
     viewBar.style.display="none";
 });
 
+viewBar.addEventListener('mousemove',()=>{
+    viewBar.style.display="block";
+})
+
+viewBar.addEventListener('mouseout',()=>{
+    viewBar.style.display="none";
+});
+
 const insertBtn=document.getElementById('insert-btn');
 const insertBar=document.getElementById('insert-bar');
 
@@ -44,6 +67,13 @@ insertBtn.addEventListener('click' ,()=>{
 });
 
 insertBtn.addEventListener('mouseout',()=>{
+    insertBar.style.display="none";
+});
+insertBar.addEventListener('mousemove',()=>{
+    insertBar.style.display="block";
+})
+
+insertBar.addEventListener('mouseout',()=>{
     insertBar.style.display="none";
 });
 
@@ -58,13 +88,26 @@ formatBtn.addEventListener('mouseout',()=>{
     formatBar.style.display="none";
 });
 
+formatBar.addEventListener('mousemove',()=>{
+    formatBar.style.display="block";
+})
+
+formatBar.addEventListener('mouseout',()=>{
+    formatBar.style.display="none";
+});
+
 const toolsBtn=document.getElementById('tools-btn');
 const toolsBar=document.getElementById('tools-bar');
-
 toolsBtn.addEventListener('click' ,()=>{
     toolsBar.style.display="block";
 });
+toolsBtn.addEventListener('mouseout' ,()=>{
+    toolsBar.style.display="none";
+});
+toolsBar.addEventListener('mousemove',()=>{
+    toolsBar.style.display="block";
+})
 
-toolsBtn.addEventListener('mouseout',()=>{
+toolsBar.addEventListener('mouseout',()=>{
     toolsBar.style.display="none";
 });
